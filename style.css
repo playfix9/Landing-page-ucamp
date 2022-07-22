@@ -1,0 +1,13 @@
+body{ 
+
+background:#808080;
+
+}
+
+p{
+    display: flex;
+    flex-flow: column wrap;
+    border: 1px solid red;
+    justify-content: space-around;
+    
+}
