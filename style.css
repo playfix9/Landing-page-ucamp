@@ -1,13 +1,38 @@
-body{ 
+body{
+    background-color: #35393e;
+}
 
-background:#808080;
+header{
+    background-color: chartreuse;  
+    margin-top:25px;
+    }
+
+
+    a{
+        text-decoration: none;
+        
+        }
+
+        
+.contenedor{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr; 
+    
+}
+
+.headlinks{
+display:flex;
+flex-direction: row;
+justify-content: flex-start;
+justify-items: center;
+align-items: center;
+flex-wrap: wrap;
 
 }
 
-p{
-    display: flex;
-    flex-flow: column wrap;
-    border: 1px solid red;
-    justify-content: space-around;
-    
+
+
+.logo{
+    display: grid;
+
 }
