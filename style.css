@@ -1,38 +1,76 @@
+* {
+    box-sizing: border-box;
+  }
 body{
     background-color: #35393e;
 }
 
 header{
-    background-color: chartreuse;  
-    margin-top:25px;
+    background-color: #35393e;  
+    margin-top: -10px;
+    
     }
 
 
-    a{
-        text-decoration: none;
-        
+    .head-title{
+     display: grid;
+       grid-template-columns: 0.426fr[sff] auto[fsf]auto[ffsd]auto[primer];
+       align-items: center;
+       justify-items:center;
+       align-content: center;       
+    }
+
+    .title-text{
+      font-family: "title";
+      font-size: 30px;
+      color:rgb(255, 194, 27);
+    }
+
+
+
+.headtext{
+    font-family: "head";
+    font-size: 20px;
+    color: rgba(255, 111, 0, 1);   
+
+}
+
+
+.headtext:hover{
+color:rgba(255, 111,0,0.8); 
+
+}
+
+
+
+
+@font-face {
+    font-family: head;
+    src: url(/fonts/Comfortaa-Bold.ttf);
+}
+
+@font-face {
+    font-family: title;
+    src: url(/fonts/THEBOLDFONT.ttf);
+}
+
+@media(max-width:767px){
+
+    .head-title{
+        grid-template-columns: 1fr;
+    }
+
+     .title-text{
+        margin-bottom: 17px;
+     }
+
+        .headtext{
+           margin-bottom: 23px;
+            
         }
 
-        
-.contenedor{
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr; 
-    
-}
-
-.headlinks{
-display:flex;
-flex-direction: row;
-justify-content: flex-start;
-justify-items: center;
-align-items: center;
-flex-wrap: wrap;
-
-}
-
-
-
-.logo{
-    display: grid;
+        header{
+            margin-top:-20px;
+        }
 
 }
