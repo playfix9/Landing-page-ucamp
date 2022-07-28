@@ -213,22 +213,22 @@ justify-content: start;
 
 @font-face {
     font-family: head;
-    src: url(/fonts/Comfortaa-Bold.ttf);
+    src: url(./fonts/Comfortaa-Bold.ttf);
 }
 
 @font-face {
     font-family: title;
-    src: url(/fonts/THEBOLDFONT.ttf);
+    src: url(./fonts/THEBOLDFONT.ttf);
 }
 
 @font-face {
     font-family: mainlink;
-    src: url(/fonts/Watermelon\ Days.ttf);
+    src: url(./fonts/Watermelon\ Days.ttf);
 }
 
 @font-face {
     font-family: distri;
-    src: url(/fonts/Strawberry\ Days.otf);
+    src: url(./fonts/Strawberry\ Days.otf);
 }
 @media(max-width:1200px){
 
