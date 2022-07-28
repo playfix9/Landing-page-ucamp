@@ -6,9 +6,18 @@ body{
 }
 
 header{
-    background-color: #35393e;  
+    background-color: transparent;  
     margin-top: -10px;
-    
+    margin-left: -7px;
+    margin-right: -7px;
+
+    }
+
+    main{
+        margin-left: -7px;
+        margin-right: -7px;
+        color: rgb(255, 0, 162);
+     
     }
 
 
@@ -24,23 +33,181 @@ header{
       font-family: "title";
       font-size: 30px;
       color:rgb(255, 194, 27);
+    
     }
 
 
 
 .headtext{
-    font-family: "head";
-    font-size: 20px;
-    color: rgba(255, 111, 0, 1);   
+    font-family: mainlink;
+    font-size: 25px;
+    color: rgb(255, 98, 0);   
 
 }
-
 
 .headtext:hover{
-color:rgba(255, 111,0,0.8); 
+color:rgba(255, 98,0,0.9); 
 
 }
 
+.main-title{
+display: grid;
+grid-template-columns: repeat(2,1fr);
+justify-items: center;
+align-items: center;
+
+
+}
+
+
+.mainlink{
+color:rgb(255, 234, 0);
+background-color: #e98c00;
+border-radius: 30px;
+margin-left:150px;
+width: 65%;
+height: 35%;
+font-family: mainlink;
+font-size: 118%;
+line-height: 0px;
+text-decoration: none;
+margin-top: 20px;
+margin-bottom: 50px;
+}
+
+
+.tacos-config{
+grid-row-start: 1;
+grid-row-end: 6;
+grid-column-start: 2;
+width:  55%;
+height: 80%;
+margin-right: 200px;
+
+}
+
+.first-link{
+display: grid;
+grid-template-columns: 20% 70% 10%;
+}
+
+.taco-icon{
+width: 40%;
+height: 67%;
+margin-left: 40%; 
+margin-top: 5px;
+}
+
+.desc{
+font-family: mainlink;
+font-size: 47px;
+grid-row-start: 2;
+margin-top: -30px;
+margin-left:150px;
+text-align: center;
+}
+
+.desc2{
+font-family: mainlink;
+color: #000000;
+text-align: center;
+margin-left: 150px;
+margin-top: -37px;
+font-size: 17px;
+
+}
+
+.desc3{
+    margin-top: 18px; text-align: center; margin-left: -25px;
+}
+
+.flecha {
+
+    width:44%; 
+    height:55%;
+    margin-left:25%; 
+    margin-top:18%;
+}
+
+
+.title-sections{
+font-family: mainlink;
+text-align: center;
+font-size: 190%;
+color: #ffbf00;
+
+}
+
+.distri{
+display: grid;
+grid-template-columns: 1fr 1fr 1fr;
+justify-items: center;
+justify-content: start;    
+
+}
+
+
+
+.card {
+    width: 400px;
+    height: 350px;
+    background: rgb(79, 79, 79);
+    padding: .4em;
+    border-radius: 6px;
+  }
+  
+  .card-image {
+    background-color: rgb(79, 79, 79);
+    width: 100%;
+    height: 60%;
+    border-radius: 6px 6px 6px 6px;
+  }
+  
+  .card-image:hover {
+    transform: scale(0.98);
+  }
+  
+  .category {
+    text-transform: uppercase;
+    font-size: 1.45em;
+    font-weight: 600;
+    color: rgb(216, 198, 0);
+    font-family: distri;
+    padding: 10px 7px 0;
+  }
+  
+  .category:hover {
+    cursor: pointer;
+  }
+  
+  .heading {
+    font-weight: 600;
+    font-family: distri;
+    color: rgb(219, 94, 40);
+    padding: 7px;
+    text-align: left;
+    line-height: 22px;
+    padding-top: 9px;
+  }
+  
+  .heading:hover {
+    cursor: pointer;
+  }
+  
+  .author {
+    color: rgb(27, 27, 27);
+    font-weight: 400;
+    font-size: 13px;
+    padding-top: 5px;
+  }
+  
+  .name {
+    font-weight: 600;
+  }
+  
+  .name:hover {
+    cursor: pointer;
+  }
 
 
 
@@ -54,7 +221,16 @@ color:rgba(255, 111,0,0.8);
     src: url(/fonts/THEBOLDFONT.ttf);
 }
 
-@media(max-width:767px){
+@font-face {
+    font-family: mainlink;
+    src: url(/fonts/Watermelon\ Days.ttf);
+}
+
+@font-face {
+    font-family: distri;
+    src: url(/fonts/Strawberry\ Days.otf);
+}
+@media(max-width:1200px){
 
     .head-title{
         grid-template-columns: 1fr;
@@ -66,11 +242,195 @@ color:rgba(255, 111,0,0.8);
 
         .headtext{
            margin-bottom: 23px;
-            
+
         }
+
 
         header{
             margin-top:-20px;
         }
 
+        .main-title{
+            grid-template-columns: 1fr;
+        }
+
+
+    
+        .tacos-config{
+         width: 60%;
+         height: 85%;
+         grid-row-start: 6;
+        grid-row-end: inherit;
+        grid-column-start: inherit;
+        margin-right: 0px;
+        }
+     .mainlink{
+       margin-left: 0px;
+
+     }
+     .desc{
+    margin-left: 0px;
+
+     }
+
+     .desc2{
+
+        margin-left: 0px;
+
+     }
+     .taco-icon{
+        width:25%;
+        height:54%;
+        margin-top: 8px;
+     }
+
+     .desc3{
+        margin-left:-15%;
+        margin-top: 20px;
+     }
+
+     .flecha{
+        width: 30%;
+        height:50%;
+        margin-left:40%; 
+        margin-top:13%;
+     }
+
+     .card{
+      width:300px;
+      height: 350px;
+     }
+
+}
+@media (max-width:855px) {
+
+    .flecha{
+       width: 27%;
+       height: 42%;
+       margin-top: 18%;
+
+    }
+
+    .desc3{
+        margin-top: 4.5%;
+    }
+
+    .card{
+     width:260px;
+     height:300px;
+
+    }
+
+    .author{
+      font-size: 10px;
+      padding-top: 30px;
+    }
+
+    .category{
+      font-size: 15px;
+    }
+
+    .heading{
+        font-size: 11px;
+    }
+
+    .distri{
+        grid-template-columns: 1fr;
+        gap:20px
+    }
+
+    .card{
+      width:370px;
+      height: 350px;
+
+    }
+}
+@media (max-width:750px){
+.mainlink{
+    width:90%;
+}
+
+.taco-icon{
+    width: 20%;
+    margin-top: 6%;
+ }
+ .desc3{
+    margin-top: 4%;
+ }
+
+ .flecha{
+    width: 25%;
+    height: 40%;
+    margin-top: 17%;
+ }
+
+}
+
+@media (max-width:600px) {
+    .desc3{
+        margin-top: 5%;
+    }
+
+    .taco-icon{
+        width: 25%;
+        margin-top: 8%;
+    }
+    .flecha{
+margin-top: 20%;
+
+    }
+}
+
+@media (max-width:500px) {
+    .flecha{
+        width: 27%;
+        height: 35%;
+        margin-top: 25%;
+    }
+}
+
+@media (max-width:400px) {
+    .mainlink{
+        font-size: 100%;
+    }
+    .desc3{
+        margin-top: 18px;
+    }
+    .flecha{
+        height: 33%;
+        margin-top: 37.5%;
+    }
+    .taco-icon{
+        margin-top: 14%;
+        margin-left: 25px;
+    }
+
+    .card{
+        width:270px;
+        height:280px;
+    }
+    .author{
+        padding-top: 5px;
+    }
+}
+
+@media (max-width:300px) {
+    .mainlink{
+        font-size: 90%;
+    }
+    .taco-icon{
+        margin-top: 17%;
+        margin-left: 11px;
+    }
+    .flecha{
+        height: 30%;
+        width: 33%;
+        margin-top: 48%;
+    }
+}
+
+@media (max-width:281px) {
+    .mainlink{
+        font-size:85%;
+    }
 }
