@@ -550,6 +550,12 @@ margin-top: 20%;
         margin-right: 200px;
         margin-top: 10px;
         }
+
+        .adicionals-sub2-img{
+            width:90%;
+            height:55%;
+        
+            }
 }
 
 @media (max-width:400px) {
