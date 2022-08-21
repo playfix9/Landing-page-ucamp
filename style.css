@@ -442,7 +442,7 @@ color:rgb(233 122 26);
    
 footer{
     margin-bottom: 10px;
-
+    padding-bottom: 300px;
 }
         .footer-distribution{
         grid-template-columns: 1fr;
