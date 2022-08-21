@@ -283,25 +283,62 @@ color:#35393e;
     font-size: 115%;
 }
 
-@font-face {
-    font-family: head;
-    src: url(./fonts/Comfortaa-Bold.ttf);
+footer{
+    background-color:rgb(79 79 79); 
+    height: 360px;
+    margin-left:-8px; 
+    margin-right:-8px;
+    margin-bottom:-8px;
+    margin-top: -14px;
 }
 
-@font-face {
-    font-family: title;
-    src: url(./fonts/THEBOLDFONT.ttf);
+.footer-distribution{
+display: grid;
+grid-template-columns: 30% 70%;
+align-items: center;
 }
 
-@font-face {
-    font-family: mainlink;
-    src: url(./fonts/Watermelon\ Days.ttf);
+
+
+.icons-space:hover{
+    opacity: 80%;
 }
 
-@font-face {
-    font-family: distri;
-    src: url(./fonts/Strawberry\ Days.otf);
+.icons-space{
+    margin-left: 29%;
+    margin-right: -24%;
+    }
+    
+    .icons-main{
+        margin-top: -30%;
+    }
+
+.options{
+color:rgb(255, 225, 0);
+font-family: distri;
+font-size: 20px;
 }
+
+.options2{
+    margin-top: 60px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+ 
+}
+
+.foot-p{
+font-size: 18px; 
+color:rgb(233 122 26);      
+}
+
+.foot-final{
+    color:rgb(164, 175, 0);   
+    font-size: 20px;
+    text-align: center;
+}
+
+
 @media(max-width:1200px){
 
     .head-title{
@@ -402,6 +439,29 @@ color:#35393e;
 
         font-size: 150%;
     }
+   
+footer{
+    margin-bottom: 10px;
+
+}
+        .footer-distribution{
+        grid-template-columns: 1fr;
+        }
+
+        .icons-main{
+            margin-top: 4%;
+            margin-bottom: -2%;
+        }
+        .icons-space{
+            margin-left: 33.5%;
+        }
+
+
+
+    .foot-final{
+        font-size: 15px;
+        background-color: rgb(79 79 79);
+    }
 
 }
 @media (max-width:855px) {
@@ -486,6 +546,11 @@ color:#35393e;
 
 
 
+    footer{
+        margin-top: 182px;
+    }
+
+
 }
 @media (max-width:750px){
 .mainlink{
@@ -513,6 +578,9 @@ color:#35393e;
     margin-right: 400px;
     margin-top: 10px;
     }
+    footer{
+        margin-top: 133px;
+    }
 }
 
 @media (max-width:600px) {
@@ -535,6 +603,15 @@ margin-top: 20%;
         margin-right: 300px;
         margin-top: 10px;
         }
+
+        footer{
+            margin-top: 61.5px;
+        }
+
+        .icons-space{
+            margin-left: 27%;
+            margin-right: -19%;
+            }
 }
 
 @media (max-width:500px) {
@@ -551,10 +628,24 @@ margin-top: 20%;
         margin-top: 10px;
         }
 
+        footer{
+            padding-bottom: 470px;
+            margin-top: 21px;
+        }
+
         .adicionals-sub2-img{
             width:90%;
             height:55%;
         
+            }
+            .options2{
+
+                flex-direction: row;
+                flex-wrap: wrap;
+                justify-content: space-between;
+                margin-right: 140px;
+                margin-left: 120px;
+             
             }
 }
 
@@ -588,6 +679,27 @@ margin-top: 20%;
         margin-right: 100px;
         margin-top: 10px;
         }
+
+        footer{
+            padding-bottom: 470px;
+            margin-top: -4px;
+        }
+
+        .adicionals-sub2-img{
+            width:90%;
+            height:55%;
+        
+            }
+            .options2{
+
+                flex-direction: row;
+                flex-wrap: wrap;
+                margin-right: 80px;
+                margin-left: 80px;
+             
+            }
+
+
 }
 
 @media (max-width:300px) {
@@ -610,10 +722,60 @@ margin-top: 20%;
         margin-right: 0px;
         margin-top: 10px;
         }
+
+        footer{
+            padding-bottom: 490px;
+            margin-top: 1.5px;
+        }
+
+        .adicionals-sub2-img{
+            width:90%;
+            height:55%;
+        
+            }
+            .options2{
+
+                flex-direction: row;
+                flex-wrap: wrap;
+                justify-content: space-around;
+                margin-right: 16px;
+                margin-left: 10px;
+             
+            }
+
+            .icons-space{
+                margin-left: 20%;
+                margin-right: -15%;
+                }
+                
+                .icons-main{
+                    margin-top: 10%;
+                }
+
 }
 
 @media (max-width:281px) {
     .mainlink{
         font-size:85%;
     }
+}
+
+@font-face {
+    font-family: head;
+    src: url(./fonts/Comfortaa-Bold.ttf);
+}
+
+@font-face {
+    font-family: title;
+    src: url(./fonts/THEBOLDFONT.ttf);
+}
+
+@font-face {
+    font-family: mainlink;
+    src: url(./fonts/Watermelon\ Days.ttf);
+}
+
+@font-face {
+    font-family: distri;
+    src: url(./fonts/Strawberry\ Days.otf);
 }
