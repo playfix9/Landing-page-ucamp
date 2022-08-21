@@ -441,8 +441,8 @@ color:rgb(233 122 26);
     }
    
 footer{
-    margin-bottom: 10px;
-    padding-bottom: 300px;
+    margin-bottom: -10px;
+    padding-bottom: 400px;
 }
         .footer-distribution{
         grid-template-columns: 1fr;
@@ -453,7 +453,7 @@ footer{
             margin-bottom: -2%;
         }
         .icons-space{
-            margin-left: 33.5%;
+            margin-left: 32%;
         }
 
 
